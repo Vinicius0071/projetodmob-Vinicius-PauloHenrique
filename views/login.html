@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>PHV Controle de Produtos</title>
+    <link rel="stylesheet" href="../css/estilo.css" />
+</head>
+
+<body>
+    <div id="tela">
+        <header>
+            <img src="../imagens/LogoSite.PNG" />
+        </header>
+        <section>
+            <h3 id="formtlogin">Login</h3>
+            <form method="POST" id="camposLogin" action="/auth">
+                <label for="user">Nome</label>
+                <input type="text" id="user" name="user" size="20" required="required"></br>
+                <label for="password">Senha</label>
+                <input type="password" name="password" id="password" size="8" required="required"></br></br>
+                <input type="submit" id="submit" value="Entrar"><br>
+                <h5><a href="/cadastro_usuario">Cadastrar novo usuario</a></h5>
+            </form>
+        </section>
+        <footer id="rodape">
+            <p>PHV Controle de Produtos&reg; - by Vinicius Pereira e Paulo Henrique<br>
+                SAC: 61 996936435<br>
+                Email: viniciuspg0071@gmail.com
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+div#tela{
+    background-color: aliceblue;
+    margin: auto;
+    width: 100%;
+}
+
+header {
+    background-color: aliceblue;
+    text-align: center;
+    
+}
+
+nav {
+    float:left;
+    padding: 12px;
+    width:15%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+    background-color:#64b9f1;
+    display:block;
+    padding:8px;
+    margin-bottom:4px;
+    color:#000000;
+    border-radius:3px;
+}
+
+nav ul a:hover {
+    background-color:#6d9bff;
+}
+
+#infopagina {
+    padding: 20px;
+    background-color: #64b9f1;
+    text-align: center;
+    border-radius:3px;
+}
+
+#formpesquisar, #formcadastro, #formatualizar, #formdeletar {
+    padding: 5px;
+
+}
+
+#homepage, #telapesquisar, #telaCadastro, #telaAtualizar, #telaPesquisar {
+    padding: 10px;
+    float:right;
+    width:84%;
+}
+
+p{
+    padding: 10px;
+}
+
+#camposLogin{
+    display:block;
+    text-align: center;
+    padding: 50px;
+}
+
+#formtlogin {
+    margin-left: 590px;
+    margin-right: 590px;
+    padding: 10px;
+    background-color: #64b9f1;
+    text-align: center;
+    border-radius: 5px;
+    
+}
+
+div footer{
+    margin: 5px;
+    clear:both
+    
+}
+
+#rodape {
+    text-align: center;
+    background-color: #64b9f1;
+    border-radius:3px;
+}

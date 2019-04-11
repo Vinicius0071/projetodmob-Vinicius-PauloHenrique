@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>PHV Controle de Produtos</title>
+    <link rel="stylesheet" href="./css/estilo.css" />
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="tela">
+        <header>
+            <img src="./imagens/LogoSite.PNG" />
+        </header>
+
+
+        <nav>
+            <ul id="menuprincipal">
+                <li id="home"><a href="/home"><i class="fas fa-home"></i> Home</a></li>
+                <li id="consultar"><a href="/consultar"><i class="fas fa-search"></i> Consultar</a></li>
+                <li id="cadastro"><a href="/cadastro"><i class="far fa-clipboard"></i> Cadastrar</a></li>
+                <li id="atualizar"><a href="/atualizar"><i class="fas fa-redo-alt"></i> Atualizar</a></li>
+                <li id="deletar"><a href="/deletar"><i class="fas fa-trash-alt"></i> Deletar</a></li>
+            </ul>
+        </nav>
+
+        <article id="telaPesquisar">
+            <header id="infopagina">
+                <h3>Consultar Produto</h3>
+            </header>
+            <form id="formpesquisar" method="POST" action="/consultar">
+                <label for="nome_pesquisa_produto">Nome do Produto</label>
+                <input id="nome_pesquisa_produto" name="nome_pesquisa_produto" required="required"
+                    type="text" /></br></br>
+                <input type="submit" id="submit" value="Pesquisar">
+            </form>
+            <table id="tabelaspec">
+                <caption>Lista de produtos</caption>
+
+                <tr align="center">
+                    <td>Id do produto</td>
+                    <td>Nome do Produto</td>
+                    <td>Preço</td>
+                    <td>Qtd. no Estoque</td>
+                </tr>
+                <%produtos.forEach((produto)=>{%>
+                <tr align="center">
+                    <td><%=produto.Id_produto%></td>
+                    <td><%=produto.nomeproduto%></td>
+                    <td><%=produto.preco%></td>
+                    <td><%=produto.qtd_estoque%></td>
+                </tr>
+                <%});%>
+            </table>
+        </article>
+        <footer id="rodape">
+            <p>PHV Controle de Produtos&reg; - by Vinicius Pereira e Paulo Henrique<br>
+                SAC: 61 996936435<br>
+                Email: viniciuspg0071@gmail.com
+            </p>
+        </footer>
+    </div>
+</body>
